@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chapter 7, Question 1</title>
+</head>
+<body>
+  <script>
+    var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                    "Thursday", "Friday", "Saturday"]
+    var birthYear = prompt("Please enter the year you were born:", "1988")
+    var birthMonth = prompt("Please enter the month you were born:", "12")
+    var birthDate = prompt("Please enter the day you were born:", "15")
+
+    var birthDay = new Date(birthYear, birthMonth - 1, birthDate)
+
+    document.write(weekDays[birthDay.getDay()])
+  </script>
+</body>
